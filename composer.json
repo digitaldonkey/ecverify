@@ -1,5 +1,5 @@
 {
-  "name": "digitaldonkey/ethereum-php",
+  "name": "digitaldonkey/ecverify",
   "description": "A library integrating Ethereum with typed PHP.",
   "require": {
     "php": ">=7",
