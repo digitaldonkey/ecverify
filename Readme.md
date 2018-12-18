@@ -14,7 +14,7 @@ web3.personal.ecRecover (
 ```php
 use Ethereum\EcRecover;
 
-$addrss = '0xbe93f9bacbcffc8ee6663f2647917ed7a20a57bb';
+$address = '0xbe93f9bacbcffc8ee6663f2647917ed7a20a57bb';
 $message = 'hello world';
 $signature = '0xce909e8ea6851bc36c007a0072d0524b07a3ff8d4e623aca4c71ca8e57250c4d0a3fc38fa8fbaaa81ead4b9f6bd03356b6f8bf18bccad167d78891636e1d69561b';
 
