@@ -67,7 +67,8 @@ class EcRecover
 
         $ec = new EC('secp256k1');
         $sign   = ["r" => substr($signature, 2, 64), "s" => substr($signature, 66, 64)];
-        $recid  = ord(hex2bin(substr($signature, 130, 2))) - 27;
+        $recid = ord(hex2bin(substr($signature, 130, 2)));
+        $recid = $recid < 2 ? $recid : 1 - ($recid % 2);
 
         $pubKey = $ec->recoverPubKey($message_hash, $sign, $recid);
 
