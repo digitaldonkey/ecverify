@@ -17,7 +17,7 @@ class EcRecover
      */
     public static function personalEcRecover(string $message, string $signature)
     {
-        $message_hash =  '0x' . Keccak::hash(self::personalSignAddHeader($message), 256);
+        $message_hash = Keccak::hash(self::personalSignAddHeader($message), 256);
         $address = self::phpEcRecover($message_hash, $signature);
         return $address;
     }
